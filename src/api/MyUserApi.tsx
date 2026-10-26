@@ -88,12 +88,6 @@ export const useGetMyUser = () => {
     return { currentUser, isLoading };
 };
 
-type UpdateMyUserRequest = {
-    name: string; 
-    adressLine1: string;
-    city: string;
-    country: string;
-};
 
 export const useUpdateMyUser = () => {
     const { getAccessTokenSilently } = useAuth0();
